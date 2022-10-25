@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-body;
+  }
+}
+
+@layer components {
+  .btn-icon {
+    @apply cursor-pointer w-10 h-10 rounded-full hover:bg-gray-300/30 flex items-center justify-center duration-200;
+  }
+  .btn-form {
+    @apply text-sm font-semibold text-white bg-blue-500 px-8 py-2 rounded;
+  }
+  .btn-form.disabled {
+    @apply bg-gray-400;
+  }
+  .btn {
+    @apply px-5 py-2  font-semibold rounded cursor-pointer;
+  }
+  .btn--pink {
+    @apply text-white bg-pink;
+  }
+  .btn--border {
+    @apply text-black border-2 border-pink;
+  }
+  .text-error {
+    @apply text-sm text-red-500 font-semibold block;
+  }
+  .text-link {
+    @apply font-semibold text-sm text-blue-400 underline;
+  }
+  .icon-nav {
+    @apply !w-6 !h-6 md:!w-8 md:!h-8;
+  }
+  .title-filter {
+    @apply text-base font-semibold;
+  }
+  .filter-selected {
+    @apply !border-blue-500 !bg-blue-100;
+  }
+  .filter-item {
+    @apply w-full text-sm bg-[#f6f5fa] p-3 rounded inline-flex items-center justify-center cursor-pointer text-center border-2 border-transparent;
+  }
+  .bg-login-register {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+  }
+  .text-error {
+    @apply text-red-500 font-semibold text-sm;
+  }
+  .sidebar-des-item {
+    @apply flex gap-x-2 w-full py-3 px-4 items-center cursor-pointer;
+  }
+  .btn-update {
+    @apply outline-none border border-blue-400 text-sm px-4 py-1 rounded text-blue-400 w-full sm:max-w-fit cursor-pointer text-center;
+  }
+  .footer-item-link {
+    @apply cursor-pointer hover:underline duration-200 text-sm text-secondary;
+  }
+  .footer-item-header {
+    @apply text-lg text-black font-semibold mb-4;
+  }
+}
+
+@layer utilities {
+  .container-cus {
+    @apply max-w-screen-xl mx-auto;
+  }
+  .wrapper {
+    @apply px-4;
+  }
+}
